@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block title %}Добавить{% endblock %}
+
+{% block mainContent %}
+    <form action="" class="form" method="post">
+        {{ form.hidden_tag() }}
+        <div>{{form.name.label()}}  {{form.name()}}</div>
+        <div>{{form.description.label()}}  {{form.description()}}</div> 
+        <div>{{ form.sub() }}</div>
+    </form>
+{% endblock %}

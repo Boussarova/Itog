@@ -1,0 +1,92 @@
+#nav_bar{
+    display: flex;
+    justify-content: space-around;
+    height: 50px;
+    align-items: center;
+    /* background-color: green; */
+}
+/* стиль для тегов а внутри тега с id nav_bar */
+#nav_bar a{
+    text-decoration: none;
+    background-color: rgb(150, 139, 139);
+    width: 200px;
+    padding: 10px 0px;
+    text-align: center;
+    font-size: 20px;
+    color: rgb(240, 231, 231);
+}
+/* #nav_bar a:hover{
+
+} */
+.info_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    margin: 15px 30px;
+}
+.info_container img{
+    width: 700px;
+}
+.info_container p{
+    font-size: 50px;
+    font-family: Impact, Haettenschweiler, 'Courier New';
+    color: rgb(255, 7, 7);
+    margin-right: 35px;
+}
+body{
+    background-color: silver;
+    
+    background-size: cover;
+    background-attachment: fixed;
+}
+#cards{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.product_card{
+    height: 300px;
+    width: 300px;
+    border: 2px solid gold;
+    margin: 10px;
+}
+.card_img{
+    width: 300px;
+    height: 200px;
+}
+.card_img img{
+    width: 300px;
+    height: 200px;
+    object-fit: contain;
+}
+
+.card_text{
+    display: flex;
+    justify-content: space-around;
+}
+.card_text p{
+    font-size: 18px;
+    color: gold;
+}
+.card_text h3{
+    font-size: 16px;
+    color: yellow;
+}
+#img_container{
+    height: 600px;
+}
+#img_container img{
+    height: 600px;
+    object-fit: contain;
+}
+.img_k{
+    width: 700px;
+}
+
+/* #main{
+    display: flex;
+    flex-direction: row;
+} */

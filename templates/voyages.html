@@ -1,0 +1,22 @@
+{% extends 'base.html'%}
+
+{% block title %} Путешествия {% endblock %}
+
+{% block mainContent %}
+    <div id="cards">
+        {% for item in cardsList %}
+        <a href="/tourne/{{item.region_id }}">
+            <div class="voyage_card">
+                <div class="card_img">
+                    <img src="/static/image/{{item.img}}" alt="">
+                </div>
+                <div class="card_text">
+                    <h3>{{item.name_tourne}}</h3>
+                    <p>{{item.description}}</p>
+                    
+                </div>
+            </div>
+        </a>
+        {% endfor %}
+    </div>
+{% endblock %}

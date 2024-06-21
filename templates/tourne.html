@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block title %} {{tourne.name_tourne}} {% endblock %}
+
+
+{% block mainContent %}
+
+
+    <div id="img_container">
+        <img src="/static/image/{{tourne.img}}" alt="">
+    </div>
+    <div id="description">
+        <h2>{{tourne.name_tourne}}</h2>
+        <p>{{tourne.description}}</p>
+        <!-- можно вывести доп столбцы из бд -->
+    </div>
+{% endblock %}
